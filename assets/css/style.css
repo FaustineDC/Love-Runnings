@@ -11,6 +11,8 @@ body {
   color: #777777;
 }
 
+/* headings and logo */
+
 h2{
   font-family: Oswald;
   text-transform: uppercase;
@@ -23,6 +25,8 @@ h2{
   font-size: 280%;
   margin-left: 30px;
 }
+
+/* navigation links */
 
 #menu{
   font-size: 110%;
@@ -52,11 +56,15 @@ h2{
   border-bottom: 1px solid #777777;
 }
 
+/* Hero image and cover text */
+
 #hero-image{
   height: 600px;
   width: 100%;
   background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
 
+/* Animates zoom effect on loading the page */
+  
   animation-name: hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -68,6 +76,8 @@ h2{
   overflow:hidden;
   position: relative;
 }
+
+/* Creates the level of zoom for hero image */
 
 @keyframes hero-zoom{
   from{
@@ -101,6 +111,8 @@ h2{
 
   position: absolute;
 }
+
+/* Club ethos */
 
 #club-ethos{
   height: 600px;
@@ -153,6 +165,8 @@ hr{
   text-align: right;
 }
 
+/* Club ethos center image */
+
 #welcome{
   margin: 50px 0;
   text-align: center;
@@ -175,6 +189,8 @@ hr{
   height: 100%;
   border-radius: 50%;
 }
+
+/* Event times */
 
 #times{
   background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
@@ -200,6 +216,8 @@ hr{
   color: #fafafa;
 }
 
+/* Footer */
+
 #footer{
   height: 150px;
 }
@@ -219,6 +237,8 @@ hr{
   color: #777777;
 }
 
+/* Gallery Photos */
+
 #photo{
   clear: both;
   line-height: 0;
@@ -229,6 +249,64 @@ hr{
 #photo img{
   width: 100%;
 }
+
+/* Form */
+
+.form-section {
+    clear: left;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form{
+  margin-top: 150px;
+  color: #ffffff;
+  background-color: rgba(60, 60, 60, .6);
+  width: 400px;
+  position: absolute;
+  padding: 30px;
+}
+
+.signup-form h2{
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.text-input{
+  background-color: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 20px;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+.text-input:hover{
+  border-color: #f16c6b;
+}
+
+.join-button{
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px 15px 32px;
+  align-content: center;
+  font-size: 100%;
+  background-color: #f16c6b;
+  color: #fafafa;
+  display: block;
+}
+
+.join-button:hover{
+  background-color: #fafafa;
+  color: #f16c6b;
+}
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1393px wide and down */
 
 @media screen and (max-width: 1393px){
   #club-ethos{
@@ -270,6 +348,8 @@ hr{
   }
 }
 
+/* For medium screens sizes from 943px wide and down */
+
 @media screen and (max-width: 943px){
   #menu{
     clear: left;
@@ -308,6 +388,8 @@ hr{
   }
   
 }
+
+/* For small screens sizes from 800px wide and down */
 
 @media screen and (max-width: 800px){
   #photo{
